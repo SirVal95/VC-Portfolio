@@ -22,7 +22,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-    z-index: 1;
 }
 
 .navbar h2 {
@@ -35,7 +34,7 @@ body {
 
 .navbar h2 span {
     color: #88e488;
-    font-style: oblique;
+    font-style: normal;
 }
 
 .social-icons a{
@@ -58,7 +57,7 @@ body {
 
 .about-me-left h1 {
     color: #ffff;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     letter-spacing: 3px;
     line-height: 75px;
@@ -80,7 +79,7 @@ body {
     margin-bottom: 35px;
 }
 
-.about-me-left a{
+.about-me-left a, .connect-box a{
     display: inline-block;
     font-size: 14px;
     letter-spacing: 2px;
@@ -93,7 +92,7 @@ body {
     transition: 0.5s;
 }
 
-.about-me-left a:hover {
+.about-me-left a:hover, .connect-box a:hover {
     transform: translateY(-8px);
 }
 
@@ -108,6 +107,132 @@ body {
     border-bottom-right-radius: 50%;
 }
 
+.services {
+    width: 100%;
+    height: 100vh;
+    background: url(assets/images/black-background-with-focus-spot-light_1017-27230.webp), no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-top: 3px dashed #ffff;
+}
+
+.services h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Bitter', serif;
+    color: #ffff;
+    border-bottom: 2px solid #88e488;
+    padding-bottom: 8px;
+}
+
+.my-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.services-front, .services-real {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.service-box {
+    width: auto;
+    border:  1.5px solid #ffff;
+    background: #274427;
+    border-radius: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5%;
+    padding: 2% 2% 5% 2%;
+    transition: 0.5s ease;
+}
+
+.service-box:hover {
+    background: #000;
+    color: #ffff;
+    transform: scale(1.05);
+}
+
+.connect-box {
+    background: #000;
+    border: none;
+    margin-left: 5px;
+    border: 1.5px dashed #88e488;
+}
+
+.connect-box h3 {
+    font-size: 32px;
+    color: #ffff;
+    line-height: 40px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.connect-box a{
+    margin-top: 12px;
+}
+
+.service-box img {
+    width: auto;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: -100%;
+    margin-left: 90%;
+    background: #ffff;
+    padding: 10px;
+}
+
+.service-box h4{
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #ffff;
+}
+
+.service-box p {
+    line-height: 20px;
+    font-size: 14px;
+    color: #ffffffd3;
+    font-weight: 500;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:900px) {
     .landing-page {
@@ -116,6 +241,8 @@ body {
     }
     .navbar {
         flex-direction: column;
+        text-align: center;
+        padding: 12px 0;
     }
 
     .navbar h2{
@@ -123,7 +250,7 @@ body {
     }
 
     .social-icons a{
-        margin-right: 12px;
+        margin-right: 10px;
     }
 
     .social-icons a:first-child {
@@ -150,4 +277,64 @@ body {
         line-height: 20px;
         text-align: center;
     }
+
+    .services {
+        height: auto;
+        text-align: center;
+        background: linear-gradient(0deg, #000000a6, #0000006e), url(assets/images/black-background-with-focus-spot-light_1017-27230.webp), no-repeat;
+    }
+
+    .services h1 {
+        margin-top: 20px;
+    }
+
+    .services-real {
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .services-front {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-box {
+        padding: 10% 7% 7% 7%;
+        height: auto;
+        width: 300px;
+    }
+
+    .service-box p {
+        line-height: 20px;
+        font-size: 17px;
+    }
+
+    .connect-box {
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding: 12% 5% 12% 5%;
+    }
+}
+
+
+@media screen and (max-width:1100px)  {
+    .landing-page{
+        padding: 10px 20px 100px 20px;
+    }
+
+    .about-me-left h1 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .services-real {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-front {
+        margin-bottom: 30px;
+    }
+
 }
