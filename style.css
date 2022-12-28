@@ -437,7 +437,11 @@ body {
 
     .hamburger-menu {
         margin-right: 4%;
-        top: 5%;
+        top: 7.5%;
+    }
+
+    .hamburger-menu:after, .hamburger-menu:before {
+        width: 60%;
     }
 
     .about-me {
