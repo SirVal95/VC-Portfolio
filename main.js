@@ -21,5 +21,5 @@ ScrollReveal({
 
 ScrollReveal().reveal('.navbar h2, .about-me-left', { delay: 50, interval:100, origin: 'left' });
 ScrollReveal().reveal('.navbar .social-icons', { delay: 50, origin: 'right' });
-ScrollReveal().reveal('.services h1, .header-1-and-link h1', { delay: 50, origin: 'top' });
-ScrollReveal().reveal('.about-me img, .service-box, .project-box, .header-1-and-link a', { delay: 50, origin: 'bottom', interval:100});
+ScrollReveal().reveal('.services h1, .header-1-and-link h1, .exp-box, .tools h1, .contact-right h1, .contact-right p', { delay: 50, origin: 'top', interval:100 });
+ScrollReveal().reveal('.about-me img, .service-box, .project-box, .header-1-and-link a, .tool-box, .contact form, .footer', { delay: 50, origin: 'bottom', interval:100});
