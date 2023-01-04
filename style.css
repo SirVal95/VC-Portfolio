@@ -77,19 +77,27 @@ body {
     transition: 0.5s;
 }
 
- .hamburger-menu:after, .hamburger-menu:before {
+.hamburger-menu:after, .hamburger-menu:before {
     content: '';
     display: block;
     height: 4px;
-    width: 80%;
+    width: 50%;
     background: #88e488;
     margin: 6px 0;
     border-radius: 10px;
     transition: 0.4s;
 }
 
+.hamburger-menu:before {
+    transform: rotate(-30deg) translate(0px, 1px);
+}
+
+.hamburger-menu:after {
+    transform: rotate(30deg) translate(0px, 0px);
+}
+
 .is-active:before {
-    transform: rotate(-45deg) translate(-7px, 1px);
+    transform: rotate(30deg) translate(2px, 0px);
 }
 
 .is-active .bar {
@@ -97,7 +105,7 @@ body {
 }
 
 .is-active:after{
-    transform: rotate(45deg) translate(-5px, -1px);
+    transform: rotate(-30deg) translate(1px, 1px);
 }
 
 .mobile-nav {
@@ -720,11 +728,11 @@ form button:hover {
 
     .hamburger-menu {
         margin-right: 4%;
-        top: 7.5%;
+        top: 8%;
     }
 
     .hamburger-menu:after, .hamburger-menu:before {
-        width: 60%;
+        width: 50%;
     }
 
     .about-me {
